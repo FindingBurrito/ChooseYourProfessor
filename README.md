@@ -31,10 +31,10 @@ Maybe one day, I’ll scale it up to include every college in the world 🌍
 
 ## 📁 Tech Stack
 
-- **HTML** – Page layout and structure
-- **CSS** – Styling with a Gen Z, purple-yellow vibe
-- **JavaScript** – Data arrays, filtering logic, DOM manipulation
-- **GitHub Pages** – Free and open hosting
+- **HTML** – Used for the structure and layout of the website
+- **CSS** – Used for styling and responsive design
+- **JavaScript** – Used to manage the dataset, filtering, and display logic
+- **GitHub Pages** – Used to host the live version of the website for free
 
 ---
 
