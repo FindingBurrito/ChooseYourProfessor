@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e044e; 
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 2rem;
+  }
+  
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+ 
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .btn {
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffcc00; 
+    color: #1e044e;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    background-color: #16033a;
+    color: #ffcc00;
+    border-top: 1px solid #333;
+  }
+
+  .search-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+  
+  .search-section input,
+  .search-section select {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #1e044e;
+  }
+  
+  .results {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .result-card {
+    background-color: #2e0a6d;
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+  }
+  
+  .search-filter {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-filter input, .search-filter select {
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .search-filter button {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #a020f0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-filter button:hover {
+    background-color: #7a14b6;
+  }
+  

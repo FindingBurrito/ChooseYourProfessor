@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Your Counselor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #320a5d;
+      color: #fff;
+      padding: 1.5rem;
+    }
+
+    h1 {
+      color: #ffcc00;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .instructions {
+      background-color: #4e1e8a;
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .instructions h3 {
+      margin-top: 0;
+      color: #ffcc00;
+    }
+
+    .instructions ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    input, select, button {
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    input, select {
+      width: 250px;
+    }
+
+    button {
+      background-color: #ffcc00;
+      color: #320a5d;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffd633;
+    }
+
+    .result-card {
+      background-color: #4e1e8a;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .result-card h2 {
+      color: #ffcc00;
+      margin-top: 0;
+    }
+
+    @media (max-width: 600px) {
+      .filters {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Search Counselors @ Long Beach City College</h1>
+
+  <div class="instructions">
+    <h3>🧭 How to Use:</h3>
+    <p>This is a student-built tool to help you pick the right counselor. You can:</p>
+    <ul>
+      <li>🔍 Search by name</li>
+      <li>🏛️ Filter by department (EOPS, STEM, Honors, etc.)</li>
+      <li>⭐ Filter by minimum rating (like only showing 4.5+ rated counselors)</li>
+    </ul>
+    <p>Try searching these names to explore:</p>
+    <ul>
+      <li><strong>General:</strong> Judy Oh</li>
+      <li><strong>EOPS:</strong> Brandon Douglas, Yolanda Padilla</li>
+      <li><strong>STEM:</strong> Robert Olmos</li>
+      <li><strong>Transfer Help:</strong> Jacqueline Garcia Hernandez</li>
+      <li><strong>Honors:</strong> Marcia Nystrom</li>
+      <li><strong>Nextup:</strong> Melissa Keith</li>
+    </ul>
+  </div>
+
+  <div class="filters">
+    <input type="text" id="search" placeholder="Search counselor name..." />
+
+    <select id="department-filter">
+      <option value="">All Departments</option>
+      <option value="General Counselling">General Counselling</option>
+      <option value="EOPS">EOPS</option>
+      <option value="Science and Technology">Science and Technology</option>
+      <option value="Transfer and Counselling">Transfer and Counselling</option>
+      <option value="Honors">Honors</option>
+      <option value="Nextup">Nextup</option>
+    </select>
+
+    <select id="rating-filter">
+      <option value="">All Ratings</option>
+      <option value="4">4.0 & above</option>
+      <option value="4.5">4.5 & above</option>
+      <option value="4.8">4.8 & above</option>
+    </select>
+
+    <button onclick="searchCounselors()">Search</button>
+  </div>
+
+  <div id="results"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
